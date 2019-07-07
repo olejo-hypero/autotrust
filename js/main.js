@@ -19,6 +19,7 @@ $(document).ready(function(){
 		$('.header__panel').removeClass('header__panel--disable');
 		$('.header__panel').toggleClass('header__panel--active');
 		$('.btn-toggle__line').toggleClass('btn-toggle__line--active');
+		$('body').toggleClass('body-overflow');
 	});
 	$(window).load(function(){
 		$ (".header").sticky({ topSpacing: 0, className: 'sticky' });
@@ -28,6 +29,7 @@ $(document).ready(function(){
 			$('.header__panel').removeClass('header__panel--active');
 			$('.header__panel').addClass('header__panel--disable');
 			$('.btn-toggle__line').removeClass('btn-toggle__line--active');
+			$('body').removeClass('body-overflow');
 		}
 		e.stopPropagation()
 	});
