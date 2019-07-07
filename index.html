@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="keywords" content="">
+      <title>Autotrust</title>
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/media.css">
+      <link rel="stylesheet" href="css/reset.css">
+      <link rel="stylesheet" href="css/fonts.css">
+      <link rel="shortcut icon" href="" type="image/x-icon">
+      <link rel="stylesheet" href="css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/jquery.arcticmodal-0.3.css">
+      <link rel="stylesheet" href="css/slick.css">
+      <link rel="stylesheet" href="css/slick-theme.css">
+      <script src="js/jquery-1.9.1.min.js"></script>
+      <script src="js/main.js"></script>
+      <script src="js/jquery.arcticmodal-0.3.min.js"></script>
+      <script src="js/jquery.maskedinput.min.js"></script>
+      <script src="js/slick.min.js"></script>
+      <script src="js/jquery.sticky.js"></script>
+      <script src='js/jquery.validate.min.js'></script>
+      <script src="js/jquery.fancybox.js"></script>
+      <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+</head>
+<body>
+      <header class="header">
+            <div class="container">
+                  <div class="header__wrap">
+                        <div class="header__row header__row--logo">
+                              <div class="logo header__logo">
+                                    <a href="/" class="logo__link">
+                                          <img src="images/logo.png" alt="Title company" class="logo__image">
+                                    </a>
+                              </div>
+                        </div>
+                        <div class="header__row header__row--info">
+                              <a href="tel:+38 094 831-19-13" class="header__number info-number">
+                                    +38 094 831-19-13
+                              </a>
+                              <div class="header__btn btn-toggle">
+                                    <div class="btn-toggle__line"></div>
+                                    <div class="btn-toggle__line"></div>
+                                    <div class="btn-toggle__line"></div>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="header__panel">
+                        <ul class="header__menu header-nav">
+                              <li class="header-nav__item">
+                                    <a href="#about" class="header-nav__link header-nav__link--scroll">О нас</a>
+                              </li>
+                              <li class="header-nav__item">
+                                    <a href="#working" class="header-nav__link header-nav__link--scroll">Как мы работаем</a>
+                              </li>
+                              <li class="header-nav__item">
+                                    <a href="#services" class="header-nav__link header-nav__link--scroll">Услуги</a>
+                              </li>
+                              <li class="header-nav__item">
+                                    <a href="#price" class="header-nav__link header-nav__link--scroll">Стоимость</a>
+                              </li>
+                              <li class="header-nav__item">
+                                    <a href="#reviews" class="header-nav__link header-nav__link--scroll">Отзывы</a>
+                              </li>
+                              <li class="header-nav__item">
+                                    <a href="#faq" class="header-nav__link header-nav__link--scroll">F.A.Q.</a>
+                              </li>
+                              <li class="header-nav__item">
+                                    <a href="#cooperation" class="header-nav__link header-nav__link--scroll">Сотрудничество</a>
+                              </li>
+                              <li class="header-nav__item">
+                                    <a href="#footer" class="header-nav__link header-nav__link--scroll">Контакты</a>
+                              </li>
+                        </ul>
+                        <ul class="header__socials menu-socials">
+                              <li class="menu-socials__item">
+                                    <a href="#" class="menu-socials__link menu-socials__link--youtube">youtube</a>
+                              </li>
+                              <li class="menu-socials__item">
+                                    <a href="#" class="menu-socials__link menu-socials__link--facebook">facebook</a>
+                              </li>
+                              <li class="menu-socials__item">
+                                    <a href="#" class="menu-socials__link menu-socials__link--instagram">instagram</a>
+                              </li>
+                        </ul>
+                  </div>
+            </div>
+      </header>
+      <main>
+            <section id="about" class="repair">
+                  <div class="repair-color">
+                        <div class="repair-bg"></div>
+                  </div>
+                  <div class="repair__wrap">
+                        <div class="repair__image">
+                              <img src="images/section-car.png" alt="" class="repair__img">
+                        </div>
+                        <div class="repair__info">
+                              <div class="repair__title title">Заберём <br / ><span class="title--color">отремонтируем</span> </br />и вернем ваше авто</div>
+                              <div class="repair__socials socials">
+                                    <a href="#" class="socials__link socials__link--whatsapp">
+                                          <img src="images/whatsapp.svg" alt="">
+                                    </a>
+                                    <a href="#" class="socials__link socials__link--telegram">
+                                          <img src="images/telegram.svg" alt="">
+                                    </a>
+                                    <a href="#" class="socials__link socials__link--viber">
+                                          <img src="images/viber.svg" alt="">
+                                    </a>
+                                    <a href="#" class="socials__link socials__link--vector">
+                                          <img src="images/facebook.svg" alt="">
+                                    </a>
+                              </div>
+                              <form id="form-repair" class="repair__socials repair-form" method="POST">
+                                    <input type="text" class="repair-form__input mask" name="repair_number" placeholder="+38 _ _ _  _ _  _ _  _ _">
+                                    <input type="hidden" name="formData" value="Перезвонить клиенту">
+                                    <input type="submit" class="repair-form__btn btn--transparent" value="Перезвоните мне">
+                              </form>
+                        </div>
+                        <div class="repair-mouse go_to"></div>
+                  </div>
+            </section>
+            <section id="working" class="working">
+                  <div class="container">
+                        <div class="working__wrap">
+                              <div class="working__map">
+                                    <img src="images/work-map.png" alt="Как работает автоконсьерж Autotrust?" class="working__img">
+                              </div>
+                              <div class="working__info">
+                                    <h2 class="working__title title">Как <span class="title--color">работает</span> автоконсьерж Autotrust?</h2>
+                                    <div class="working__list">
+                                          <div class="working__item">
+                                                <div class="working__number-wrap">
+                                                      <div class="working__number">
+                                                            1
+                                                      </div>
+                                                </div>
+                                                <div class="working__item-info">
+                                                      <div class="working__item-title">Вы связываетесь с нами по телефону или в мессенджерах:</div>
+                                                      <div class="working__socials socials">
+                                                            <a href="#" class="socials__link socials__link--whatsapp">
+                                                                  <img src="images/whatsapp.svg" alt="">
+                                                            </a>
+                                                            <a href="#" class="socials__link socials__link--telegram">
+                                                                  <img src="images/telegram.svg" alt="">
+                                                            </a>
+                                                            <a href="#" class="socials__link socials__link--viber">
+                                                                  <img src="images/viber.svg" alt="">
+                                                            </a>
+                                                            <a href="#" class="socials__link socials__link--vector">
+                                                                  <img src="images/facebook.svg" alt="">
+                                                            </a>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                          <div class="working__item">
+                                                <div class="working__number-wrap">
+                                                      <div class="working__number">2</div>
+                                                </div>
+                                                <div class="working__item-info">
+                                                      <div class="working__item-title">Передайте автомобиль нашему консьержу</div>
+                                                      <p class="working__item-text">
+                                                            Пока машина находится у нас, она застрахована на 1 000 000 грн.
+                                                      </p>
+                                                </div>
+                                          </div>
+                                          <div class="working__item">
+                                                <div class="working__number-wrap">
+                                                      <div class="working__number">3</div>
+                                                </div>
+                                                <div class="working__item-info">
+                                                      <div class="working__item-title">Занимайтесь своими делами</div>
+                                                      <p class="working__item-text">
+                                                            После обслуживания мы вернем ваш автомобиль в то место, которое вы укажете. * Работаем в Киеве и Киевской области
+                                                      </p>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </section>
+            <section id="services" class="service">
+                  <div class="container">
+                        <div class="service__wrap">
+                              <div class="service__video">
+                                    <h2 class="service__title title">
+                                          Сколько времени и средств вы потратили на<span class="title--color"> обслуживание</span> своей машины?
+                                    </h2>
+                                    <a class="service__link service__link--fancybox btn" onclick="$('#video-modal').arcticmodal()">Видео о сервисе</a>
+                              </div>
+                              <div class="service__info">
+                                    <p class="service__text">
+                                          Мы решим абсолютно любые задачи с вашим автомобилем: отремонтируем, переобуем, помоем, заправим, подготовим к продаже и привезем в любую точку Киева.
+                                    </p>
+
+                                    <p class="service__text">
+                                          Автоконсьерж AutoTRUST – это возможность обслужить ваш автомобиль за 5 минут,
+                                          не покидая дома или офиса.
+                                    </p>
+
+                                    <p class="service__text">
+                                          Пока вы занимаетесь своими делами, наш консьерж приезжает по указанному вами адресу в указанное время, принимает ваш автомобиль за 5 минут по акту приема-передачи, устанавливает GPS-трекер и видеорегистратор, везет автомобиль на сервис, шиномонтаж или мойку, следит за качеством исполнения работ, подбирает запчасти, согласовывает с вами цены и, после окончания работ, возвращает исправный автомобиль в удобное для вас место. Всё время, пока ваш автомобиль находится у нас, он застрахован на 1 миллион грн. Также вы сможете контролировать автомобиль через свой смартфон.
+                                    </p>
+
+                                    <p class="service__text">
+                                          Ваше время стоит дороже, чем наша услуга.
+                                    </p>
+                              </div>
+                        </div>
+                        <div class="service__list services">
+                              <div class="services__item">
+                                    <img src="images/supp.png" alt="Онлайн заявка" class="services__img">
+                                    <div class="services__title">ОНЛАЙН-заявка</div>
+                              </div>
+                              <div class="services__item">
+                                    <img src="images/konserj.png" alt="Онлайн заявка" class="services__img">
+                                    <div class="services__title">личный консьерж</div>
+                              </div>
+                              <div class="services__item">
+                                    <img src="images/gps.png" alt="Онлайн заявка" class="services__img">
+                                    <div class="services__title">GPS - контроль</div>
+                              </div>
+                              <div class="services__item">
+                                    <img src="images/rating.png" alt="Онлайн заявка" class="services__img">
+                                    <div class="services__title">страховка 1 млн грн.</div>
+                              </div>
+                              <div class="services__item">
+                                    <img src="images/iphone.png" alt="Онлайн заявка" class="services__img">
+                                    <div class="services__title">контроль авто через ваш смартфон</div>
+                              </div>
+                              <div class="services__item">
+                                    <img src="images/clock.png" alt="Онлайн заявка" class="services__img">
+                                    <div class="services__title">экономия вашего времени!</div>
+                              </div>
+                        </div>
+                  </div>
+            </section>
+            <section class="trust">
+                  <div class="container">
+                        <h2 class="trust__title title trust__title--center">Что такое автоконсьерж Trust Auto</h2>
+                        <div class="trust__wrap">
+                              <div class="trust__block">
+                                    <img src="images/trust-clock.png" alt="Экономия вашего времени" class="trust__img">
+                                    <div class="trust__block-title">Эномомия вашего времени</div>
+                                    <div class="trust__text">Вам не нужно больше тратить время на автосервис. Мы сами заберем, отремонтируем и вернем вам ваш автомобиль.</div>
+                              </div>
+                              <div class="trust__block">
+                                    <img src="images/trust-car.png" alt="Экономия вашего времени" class="trust__img">
+                                    <div class="trust__block-title">Эномомия вашего времени</div>
+                                    <div class="trust__text">Вам не нужно больше тратить время на автосервис. Мы сами заберем, отремонтируем и вернем вам ваш автомобиль.</div>
+                              </div>
+                              <div class="trust__block">
+                                    <img src="images/trust-lounger.png" alt="Экономия вашего времени" class="trust__img">
+                                    <div class="trust__block-title">Эномомия вашего времени</div>
+                                    <div class="trust__text">Вам не нужно больше тратить время на автосервис. Мы сами заберем, отремонтируем и вернем вам ваш автомобиль.</div>
+                                    <div class="trust__bottom-text">Мы сделаем всё за вас.</div>
+                              </div>
+                        </div>
+                  </div>
+            </section>
+            <section class="calling">
+                  <div class="container">
+                        <div class="calling__wrap">
+                              <a class="calling__link" onclick="$('#exampleModal').arcticmodal()">Вызвать автокосьержа</a>
+                              <div class="calling__desc">Или напишите нам в мессенджере</div>
+                              <div class="calling__socials socials">
+                                    <a href="#" class="socials__link socials__link--whatsapp">
+                                          <img src="images/b-whatsapp.svg" alt="">
+                                    </a>
+                                    <a href="#" class="socials__link socials__link--telegram">
+                                          <img src="images/b-telegram.svg" alt="">
+                                    </a>
+                                    <a href="#" class="socials__link socials__link--viber">
+                                          <img src="images/b-viber.svg" alt="">
+                                    </a>
+                                    <a href="#" class="socials__link socials__link--vector">
+                                          <img src="images/b-facebook.svg" alt="">
+                                    </a>
+                              </div>
+                        </div>
+                  </div>
+            </section>
+            <section id="price" class="pricing">
+                  <div class="container">
+                        <div class="pricing__wrap">
+                              <div class="pricing__left">
+                                    <div class="pricing__title">Стоимость вызова</div>
+                                    <div class="pricing__price">600 <span class="pricing__curr">грн</span></div>
+                                    <img src="images/pricing.png" alt="Стоимость вызова" class="pricing__image">
+                              </div>
+                              <div class="pricing__info">
+                                    <div class="pricing__subtitle">В эту сумму включены:</div>
+                                    <div class="pricing__list price-list">
+                                          <div class="price-list__item">
+                                                Выезд мастера-приёмщика
+                                          </div>
+                                          <div class="price-list__item">
+                                                Доставка автомобиля на сервис, контроль качества обслуживания, возврат автомобиля клиенту
+                                          </div>
+                                          <div class="price-list__item">
+                                                Поддержка квалифицированного менеджера 24/7
+                                          </div>
+                                          <div class="price-list__item">
+                                                Консультации по обслуживанию и ремонту авто
+                                          </div>
+                                          <div class="price-list__item">
+                                                Страховка <span class="price-list__text-color">1 000 000</span> грн.
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                        <a class="pricing__btn btn" onclick="$('#exampleModal').arcticmodal()">Оставить заявку</a>
+                  </div>
+            </section>
+            <section id="reviews" class="reviews">
+                  <div class="container">
+                        <div class="reviews__bg">
+                              <h2 class="reviews__title reviews__title--center title">Отзывы</h2>
+                              <div class="reviews__subtitle">Самый ценный ресурс - время, не тратьте его на пробки и залы ожидания</div>
+                              <div class="reviews__wrap">
+                                    <div class="reviews__slider reviews-slider">
+                                          <div class="reviews-slider__item">
+                                                <img src="images/slide-photo.png" alt="" class="reviews-slider__img">
+                                                <div class="reviews-slider__name">Юрiй Снишкiв</div>
+                                                <div class="reviews-slider__text">
+                                                      Вперше скористався послугою і дуже задоволений. Чекав на таку послугу декілька років. Зекономив цілий день і машина поремонтована за адекватні кошти. Взагалі дуже уважно і доречно рекомендують якісь роботи, бережно ставляться до авта.
+                                                      Буду і надалі користуватись і іншим рекомендувати.
+                                                      Велика економія часу і зусиль+хороший і доступний автосервіс.
+                                                      Молодці!
+                                                </div>
+                                          </div>
+                                          <div class="reviews-slider__item">
+                                                <img src="images/slide-photo.png" alt="" class="reviews-slider__img">
+                                                <div class="reviews-slider__name">Юрiй Снишкiв</div>
+                                                <div class="reviews-slider__text">
+                                                      Вперше скористався послугою і дуже задоволений. Чекав на таку послугу декілька років. Зекономив цілий день і машина поремонтована за адекватні кошти. Взагалі дуже уважно і доречно рекомендують якісь роботи, бережно ставляться до авта.
+                                                      Буду і надалі користуватись і іншим рекомендувати.
+                                                      Велика економія часу і зусиль+хороший і доступний автосервіс.
+                                                      Молодці!
+                                                </div>
+                                          </div>
+                                          <div class="reviews-slider__item">
+                                                <img src="images/slide-photo.png" alt="" class="reviews-slider__img">
+                                                <div class="reviews-slider__name">Юрiй Снишкiв</div>
+                                                <div class="reviews-slider__text">
+                                                      Вперше скористався послугою і дуже задоволений. Чекав на таку послугу декілька років. Зекономив цілий день і машина поремонтована за адекватні кошти. Взагалі дуже уважно і доречно рекомендують якісь роботи, бережно ставляться до авта.
+                                                      Буду і надалі користуватись і іншим рекомендувати.
+                                                      Велика економія часу і зусиль+хороший і доступний автосервіс.
+                                                      Молодці!
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <div class="reviews__nav"></div>
+                                    <a href="#" class="reviews__link">Читать все отзывы</a>
+                              </div>
+                        </div>
+                  </div>
+            </section>
+            <section id="faq" class="questions">
+                  <div class="container">
+                        <div class="questions__line"></div>
+                        <h2 class="questions__title reviews__title--center title">Часто задаваемые вопросы</h2>
+                        <div class="questions__wrap">
+                              <div class="questions__block">
+                                    <div class="questions__question">Почему я должен вам доверить свой автомобиль?</div>
+                                    <div class="questions__answer">
+                                          Мы установим в ваш автомобиль GPS-трекер и видеорегистратор.
+                                          Вы сможете отслеживать геопозицию своей машины прямо со смартфона.
+                                    </div>
+                              </div>
+                              <div class="questions__block">
+                                    <div class="questions__question">Почему я должен вам доверить свой автомобиль?</div>
+                                    <div class="questions__answer">
+                                          Мы установим в ваш автомобиль GPS-трекер и видеорегистратор.
+                                          Вы сможете отслеживать геопозицию своей машины прямо со смартфона.
+                                    </div>
+                              </div>
+                              <div class="questions__block">
+                                    <div class="questions__question">Почему я должен вам доверить свой автомобиль?</div>
+                                    <div class="questions__answer">
+                                          Мы установим в ваш автомобиль GPS-трекер и видеорегистратор.
+                                          Вы сможете отслеживать геопозицию своей машины прямо со смартфона.
+                                    </div>
+                              </div>
+                              <div class="questions__block">
+                                    <div class="questions__question">Почему я должен вам доверить свой автомобиль?</div>
+                                    <div class="questions__answer">
+                                          Мы установим в ваш автомобиль GPS-трекер и видеорегистратор.
+                                          Вы сможете отслеживать геопозицию своей машины прямо со смартфона.
+                                    </div>
+                              </div>
+                              <div class="questions__block">
+                                    <div class="questions__question">Почему я должен вам доверить свой автомобиль?</div>
+                                    <div class="questions__answer">
+                                          Мы установим в ваш автомобиль GPS-трекер и видеорегистратор.
+                                          Вы сможете отслеживать геопозицию своей машины прямо со смартфона.
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </section>
+            <section id="cooperation" class="cooperation">
+                  <div class="container">
+                        <h2 class="cooperation__title cooperation__title--center title">Сотрудничество</h2>
+                        <div class="cooperation__wrap">
+                              <div class="cooperation__block">
+                                    <div class="cooperation__subtitle">Для корпоративных клиентов</div>
+                                    <img src="images/corporate.png" alt="Для корпоративных клиентов" class="cooperation__img">
+                                    <div class="cooperation__text">
+                                          Мы полностью прозрачная компания, которая справится даже с большим парком автомобилей и исключит коррупционную составляющую при обслуживании. Для нас выгодно работать с количеством, а не думать об «откатах». Передавая обслуживание ваших машин нашей компании, вы экономите время и деньги, получив взамен качество.
+                                    </div>
+                                    <form id="form-cooperation" class="cooperation__form cooperation-form" method="POST">
+                                          <div class="cooperation-form__block">
+                                                <input type="text" class="cooperation-form__input" name="coorepation_number" placeholder="Ваш телефон">
+                                          </div>
+                                          <input type="hidden" name="formData" value="Перезвонить клиенту">
+                                          <input type="submit" class="cooperation-form__btn btn" value="Перезвоните мне">
+                                    </form>
+                              </div>
+                              <div class="cooperation__block">
+                                    <div class="cooperation__subtitle">Для сервисных центров и СТО</div>
+                                    <img src="images/service.png" alt="Для сервисных центров и сто" class="cooperation__img">
+                                    <div class="cooperation__text">
+                                          Если вы являетесь сервисным центром или узкоспециализированной СТО, оставьте вашу заявку и мы обязательно свяжемся с вами в ближайшее время.
+                                    </div>
+                                    <form id="form-cooperation-two" class="cooperation__form cooperation-form" method="POST">
+                                          
+                                          <div class="cooperation-form__block">
+                                                <input type="text" class="cooperation-form__input" name="coop_number" placeholder="Ваш телефон">
+                                          </div>
+                                          <div class="cooperation-form__block">
+                                                <input type="text" class="cooperation-form__input" name="speciality" placeholder="Специализация сервиса">
+                                          </div>
+                                          <input type="hidden" name="formData" value="Заявка]Для сервисных центров и СТО">
+                                          <input type="submit" class="cooperation-form__btn btn" value="Отправить">
+                                    </form>
+                              </div>
+                        </div>
+                  </div>
+            </section>
+      </main>
+      <footer id="footer" class="footer">
+            <div class="footer__wrap">
+                  <div class="footer__map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.3512600930476!2d30.414731415731513!3d50.453183379475774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cc410c74c34f%3A0xd3c29def0ef2c208!2z0YPQuy4g0J3QuNC60L7Qu9Cw0Y8g0JLQsNGB0LjQu9C10L3QutC-LCAyLCDQmtC40LXQsiwg0KPQutGA0LDQuNC90LAsIDAyMDAw!5e0!3m2!1sru!2sru!4v1562325438478!5m2!1sru!2sru" width="1200" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                  </div>
+                  <div class="footer__info">
+                        <div class="footer__title">ООО «ТРАСТ.ИН.ЮА» ЕГРПОУ: 42584202</div>
+                        <div class="footer__box">
+                              <div class="footer__subtitle">Адрес:</div>
+                              <div class="footer__desc">
+                                    г. Киев, ул. Николая Василенко, 2
+                                    <br />(ст. Метро «Берестейская»)
+                              </div>
+                        </div>
+                        <div class="footer__box">
+                              <div class="footer__subtitle">Телефоны:</div>
+                              <div class="footer__desc">+38 (044) 331-19-13</div>
+                              <div class="footer__desc">+38 (067) 836-19-13</div>
+                        </div>
+                        <div class="footer__box info">
+                              <a href="tel:+38 (044) 331-19-13" class="info__number btn">+38 (044) 331-19-13</a>
+                              <a href="mailto:office@trust.in.ua" class="info__inbox btn">office@trust.in.ua</a>
+                        </div>
+                        <div class="footer__order order">
+                              <div class="order__text">
+                                    Вы можете оставить заявку или задать вопрос в любом удобном мессенджере:
+                              </div>
+                              <div class="order__socials socials">
+                                    <a href="#" class="socials__link socials__link--whatsapp">
+                                          <img src="images/b-whatsapp.svg" alt="">
+                                    </a>
+                                    <a href="#" class="socials__link socials__link--telegram">
+                                          <img src="images/b-telegram.svg" alt="">
+                                    </a>
+                                    <a href="#" class="socials__link socials__link--viber">
+                                          <img src="images/b-viber.svg" alt="">
+                                    </a>
+                                    <a href="#" class="socials__link socials__link--vector">
+                                          <img src="images/b-facebook.svg" alt="">
+                                    </a>
+                              </div>
+                              <a href="#" class="order__offer">Договор-оферта</a>
+                        </div>
+                  </div>
+            </div>
+      </footer>
+      <div style="display: none;">
+            <div class="box-modal" id="exampleModal">
+                  <form id="form-modal" class="order-form" method="POST">
+                        <div class="order-form__block">
+                              <label for="order-name" class="order-form__label">Как к Вам обращаться?</label>
+                              <div class="order-form__row order-form__row--name">
+                                    <input type="text" class="order-form__input" id="order-name" name="name">
+                              </div>
+                        </div>
+                        <div class="order-form__block">
+                              <label for="order-phone" class="order-form__label">Ваш телефон</label>
+                              <div class="order-form__row order-form__row--phone">
+                                    <input type="text" class="order-form__input" id="order-phone" name="phone">
+                              </div>
+                        </div>
+                        <div class="order-form__buttons">
+                              <div class="order-form__cancel btn--transparent arcticmodal-close">Отмена</div>
+                              <input type="hidden" name="formData" value="Заявка">
+                              <input type="submit" class="order-form__btn btn--black" value="Отправить">
+                        </div>
+                  </form>
+            </div>
+      </div>
+
+      <div style="display: none;">
+            <div class="thanks-modal" id="modal-thank">
+                  <div class="thanks-mail">
+                        <span class="thanks-mail__title">Спасибо за ваше обращение!</span>
+                        <span class="thanks-mail__desc">Мы перезвоним Вам в течение 5 минут</span>
+                  </div>
+            </div>
+      </div>
+
+      <div style="display: none;">
+            <div class="video-modal" id="video-modal">
+                  <iframe width="555" height="325" src="https://www.youtube.com/embed/PRuJxAQNQGk?enablejsapi=1" class="video-modal__iframe" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="" data-gtm-yt-inspected-10840012_14="true" id="823083192"></iframe>
+            </div>
+      </div>
+</body>
+</html>
