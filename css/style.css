@@ -619,6 +619,7 @@ img {
 	font-size: 14px;
 	text-decoration: none;
 	text-transform: uppercase;
+	cursor: pointer;
 }
 
 .service__link:before {
